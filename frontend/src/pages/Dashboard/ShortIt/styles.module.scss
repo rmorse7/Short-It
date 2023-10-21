@@ -1,0 +1,19 @@
+.short-it {
+  padding-top: 100px;
+
+  .table-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: auto;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .table {
+    min-width: 714px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+}

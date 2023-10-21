@@ -1,0 +1,18 @@
+$purple: #543972;
+$secondary: #7c3ba1;
+
+.subscription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 4rem;
+  color: $secondary;
+  opacity: 0.5;
+  transform: rotate(-20deg);
+
+  span {
+    display: inline-block;
+    margin-left: 2rem;
+  }
+}

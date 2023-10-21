@@ -1,0 +1,123 @@
+$purple: #543972;
+$secondary: #7c3ba1;
+$white: #eee;
+
+.home {
+  .card-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+
+    @media screen and (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 630px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+      background-color: white;
+      transition: 0.5s;
+
+      .numbers {
+        position: relative;
+        font-weight: 500;
+        font-size: 2.5rem;
+        color: $purple;
+      }
+
+      .name {
+        margin-top: 5px;
+        font-size: 1.1rem;
+        color: $purple;
+      }
+
+      .icon {
+        font-size: 3.5rem;
+        color: $purple;
+      }
+
+      &:hover {
+        background-color: $purple;
+
+        .numbers,
+        .name,
+        .icon {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .analyze-box {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+
+    .links {
+      width: 300px;
+      list-style: none;
+
+      li {
+        margin: 10px 0;
+        padding: 20px;
+        border-radius: 20px;
+        transition: 0.3s;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover,
+        &.active {
+          background-color: #f7f1fd;
+        }
+
+        .short {
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: $purple;
+        }
+
+        .origin {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+
+    .chart {
+      position: relative;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        padding: 10px 20px;
+        border-radius: 12px;
+        border: 2px dashed $purple;
+        color: $purple;
+        text-transform: uppercase;
+        opacity: 0.3;
+      }
+
+      .button {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}

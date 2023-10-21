@@ -1,0 +1,36 @@
+$purple: #543972;
+$secondary: #7c3ba1;
+$white: #eee;
+
+.link {
+  display: flex;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+
+  .text {
+    flex: 1;
+
+    .url {
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: transparent;
+      background: linear-gradient(90deg, $purple, $secondary);
+      background-clip: text;
+    }
+
+    .origin {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  .button {
+    color: $secondary;
+    cursor: pointer;
+  }
+}
